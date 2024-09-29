@@ -136,18 +136,18 @@
    <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
    <script src="/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.6.1" id="jquery-blockui-js" defer="" data-wp-strategy="defer"></script>
    <script id="wc-add-to-cart-js-extra">
-      var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/en\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"\/en\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+      var wc_add_to_cart_params = {"ajax_url":"admin-ajax.php","wc_ajax_url":"\/en\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"\/en\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
    </script>
    <script src="/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.6.1" id="wc-add-to-cart-js" defer="" data-wp-strategy="defer"></script>
    <script src="/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.6.1" id="js-cookie-js" defer="" data-wp-strategy="defer"></script>
    <script id="woocommerce-js-extra">
-      var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/en\/?wc-ajax=%%endpoint%%"};
+      var woocommerce_params = {"ajax_url":"admin-ajax.php","wc_ajax_url":"\/en\/?wc-ajax=%%endpoint%%"};
    </script>
    <script src="/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.6.1" id="woocommerce-js" defer="" data-wp-strategy="defer"></script>
    <script defer="defer" src="/wp-content/plugins/widget-google-reviews/assets/js/public-main.js?ver=3.6.1" id="grw-public-main-js-js"></script>
    <script id="sib-front-js-js-extra">
       var sibErrMsg = {"invalidMail":"Please fill out valid email address","requiredField":"Please fill out required fields","invalidDateFormat":"Please fill out valid date format","invalidSMSFormat":"Please fill out valid phone number"};
-      var ajax_sib_front_object = {"ajax_url":"\/wp-admin\/admin-ajax.php","ajax_nonce":"305657b8c1","flag_url":"\/wp-content\/plugins\/mailin\/img\/flags\/"};
+      var ajax_sib_front_object = {"ajax_url":"admin-ajax.php","ajax_nonce":"305657b8c1","flag_url":"\/wp-content\/plugins\/mailin\/img\/flags\/"};
    </script>
    <script src="/wp-content/plugins/mailin/js/mailin-front.js?ver=1709326097" id="sib-front-js-js"></script>
    <link rel="https://api.w.org/" href="https://absherbusiness.com/en/wp-json/">
@@ -939,15 +939,20 @@
       background:#fff !important;
       color:#00D658 !important
       }		
+
+
+      
    </style>
    <script src="/wp-includes/js/wp-emoji-release.min.js?ver=6.6.2" defer=""></script>
 </head>
 <body class="home page-template page-template-elementor_header_footer page page-id-12349 wp-custom-logo theme-bizex woocommerce-js elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-12349 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="mobile">
+   <!-- Back to top button -->
+   <a id="button"></a>
    <!-- GTM Container placement set to automatic -->
    <!-- Google Tag Manager (noscript) -->
    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9WP7WG" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
    <!-- End Google Tag Manager (noscript) -->		
-   <div data-elementor-type="header" data-elementor-id="12451" class="elementor elementor-12451 elementor-11685 elementor-location-header" data-elementor-post-type="elementor_library">
+   <div data-elementor-type="header" data-elementor-id="12451" class="elementor elementor-12451 elementor-11685 elementor-location-header" data-elementor-post-type="elementor_library" style="position: fixed;background-color: #fff;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);z-index: 999;">
       <div class="elementor-element elementor-element-ba493ce e-con-full e-flex e-con e-parent e-lazyloaded" data-id="ba493ce" data-element_type="container">
          <div class="elementor-element elementor-element-5582df7 e-con-full e-flex e-con e-child" data-id="5582df7" data-element_type="container">
             <div class="elementor-element elementor-element-7794bb3 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="7794bb3" data-element_type="widget" data-widget_type="theme-site-logo.default">
@@ -1114,7 +1119,7 @@
          </div>
       </div>
    </div>
-   <div data-elementor-type="wp-page" data-elementor-id="12349" class="elementor elementor-12349 elementor-11083" data-elementor-post-type="page">
+   <div data-elementor-type="wp-page" data-elementor-id="12349" class="elementor elementor-12349 elementor-11083" data-elementor-post-type="page" style="padding-top: 80px;">
       <div class="elementor-element elementor-element-0773fdd e-con-full e-flex e-con e-parent e-lazyloaded" data-id="0773fdd" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
          <div class="elementor-element elementor-element-9420e80 e-con-full e-flex e-con e-child" data-id="9420e80" data-element_type="container" id=home>
             <div class="elementor-element elementor-element-a6fab06 e-con-full e-flex e-con e-child" data-id="a6fab06" data-element_type="container">
@@ -1367,9 +1372,7 @@
                <div class="col-md-6 col-lg-4">
                   <div class="single-service">
                      <div class="services-content">
-                        <span class="services-icon">
-                              <i class="fab fa-battle-net"></i>
-                        </span>
+                        <span class="services-icon"><i class="fas fa-file-signature"></i></span>
                         <h3 class="services-title">Etimad Platform</h3>
                         <p class="services-description">We assist companies in registering and obtaining approvals from the Etimad platform, which is an electronic system aimed at facilitating contracting and procurement processes in the government sector.</p>
                         <a href="https://wa.me/+966546987943" class="learn-more">Contact US</a>
@@ -1382,9 +1385,7 @@
                <div class="col-md-6 col-lg-4">
                   <div class="single-service">
                      <div class="services-content">
-                        <span class="services-icon">
-                        <i class="fab fa-battle-net"></i>
-                        </span>
+                        <span class="services-icon"><i class="fas fa-shipping-fast"></i></span>
                         <h3 class="services-title">Fasah Platform</h3>
                         <p class="services-description">We assist companies in dealing with the Fasah platform, which is concerned with the procedures for exporting and importing goods and products, contributing to the acceleration and facilitation of logistical operations.</p>
                         <a href="https://wa.me/+966546987943" class="learn-more">Contact US</a>
@@ -1397,9 +1398,7 @@
                <div class="col-md-6 col-lg-4">
                   <div class="single-service">
                      <div class="services-content">
-                        <span class="services-icon">
-                        <i class="fab fa-battle-net"></i>
-                        </span>
+                        <span class="services-icon"><i class="fas fa-balance-scale"></i></span>
                         <h3 class="services-title">Articles of Incorporation</h3>
                         <p class="services-description">We provide services for preparing and drafting articles of incorporation for institutions and companies, ensuring their compliance with local and international regulations, while meeting the legal and administrative objectives of the clients.</p>
                         <a href="https://wa.me/+966546987943" class="learn-more">Contact US</a>
@@ -1412,9 +1411,7 @@
                <div class="col-md-6 col-lg-4">
                   <div class="single-service">
                      <div class="services-content">
-                        <span class="services-icon">
-                        <i class="fab fa-battle-net"></i>
-                        </span>
+                        <span class="services-icon"><i class="fas fa-building"></i></span>
                         <h3 class="services-title">Saudi Company Formation</h3>
                         <p class="services-description">We assist in the establishment of companies in the Kingdom of Saudi Arabia, starting from registering the trade name and preparing the necessary documents, to completing the legal procedures for operating the company in compliance with the law.</p>
                         <a href="https://wa.me/+966546987943" class="learn-more">Contact US</a>
@@ -1427,9 +1424,7 @@
                <div class="col-md-6 col-lg-4">
                   <div class="single-service">
                      <div class="services-content">
-                        <span class="services-icon">
-                        <i class="fab fa-battle-net"></i>
-                        </span>
+                        <span class="services-icon"><i class="fas fa-globe-americas"></i></span>
                         <h3 class="services-title">Foreign Company Formation Inside and Outside the Kingdom</h3>
                         <p class="services-description">We provide full support to foreigners wishing to establish companies inside or outside the Kingdom by offering legal and business consultations and facilitating the necessary procedures for the establishment of foreign companies.</p>
                         <a href="https://wa.me/+966546987943" class="learn-more">Contact US</a>
@@ -1442,9 +1437,7 @@
                <div class="col-md-6 col-lg-4">
                   <div class="single-service">
                      <div class="services-content">
-                        <span class="services-icon">
-                        <i class="fab fa-battle-net"></i>
-                        </span>
+                        <span class="services-icon"><i class="fas fa-money-bill-wave"></i></span>
                         <h3 class="services-title">Investment Licenses</h3>
                         <p class="services-description">We provide services for obtaining the necessary investment licenses to conduct business activities in the Kingdom, helping to expedite the process of establishing projects and ensuring compliance with legal requirements.</p>
                         <a href="https://wa.me/+966546987943" class="learn-more">Contact US</a>
@@ -1457,9 +1450,7 @@
                <div class="col-md-6 col-lg-4">
                   <div class="single-service">
                      <div class="services-content">
-                        <span class="services-icon">
-                        <i class="fab fa-battle-net"></i>
-                        </span>
+                        <span class="services-icon"><i class="fas fa-chart-line"></i></span>
                         <h3 class="services-title">Investment Services</h3>
                         <p class="services-description">We provide comprehensive consultations and services to investors, including investment opportunity analysis, advice on investment strategies, and maximizing the potential of available opportunities.</p>
                         <a href="https://wa.me/+966546987943" class="learn-more">Contact US</a>
@@ -1472,9 +1463,7 @@
                <div class="col-md-6 col-lg-4">
                   <div class="single-service">
                      <div class="services-content">
-                        <span class="services-icon">
-                        <i class="fab fa-battle-net"></i>
-                        </span>
+                        <span class="services-icon"><i class="fas fa-layer-group"></i></span>
                         <h3 class="services-title">Classification of Institutions and Companies</h3>
                         <p class="services-description">Classifying institutions and companies according to professional standards and local regulations, which helps organize the market and facilitate commercial evaluations.</p>
                         <a href="https://wa.me/+966546987943" class="learn-more">Contact US</a>
@@ -1487,9 +1476,7 @@
                <div class="col-md-6 col-lg-4">
                   <div class="single-service">
                      <div class="services-content">
-                        <span class="services-icon">
-                        <i class="fab fa-battle-net"></i>
-                        </span>
+                        <span class="services-icon"><i class="fas fa-comments"></i></span>
                         <h3 class="services-title">Consulting Services</h3>
                         <p class="services-description">Providing specialized consultations in various fields, such as management, finance, and strategic planning, to help clients achieve their goals and improve their operations.</p>
                         <a href="https://wa.me/+966546987943" class="learn-more">Contact US</a>
@@ -1502,9 +1489,7 @@
                <div class="col-md-6 col-lg-4">
                   <div class="single-service">
                      <div class="services-content">
-                        <span class="services-icon">
-                        <i class="fab fa-battle-net"></i>
-                        </span>
+                        <span class="services-icon"><i class="fas fa-hand-holding-usd"></i></span>
                         <h3 class="services-title">Loan Facilitation</h3>
                         <p class="services-description">Providing support in obtaining loan facilities from banks and financial institutions, including preparing the necessary documents and offering advice on loan terms.</p>
                         <a href="https://wa.me/+966546987943" class="learn-more">Contact US</a>
@@ -2201,7 +2186,7 @@
       <script src="/wp-content/plugins/bizex-tools/assets/js/addon.js?ver=1.0" id="bizex-addon-js"></script>
       <script src="/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=8.6.1" id="sourcebuster-js-js"></script>
       <script id="wc-order-attribution-js-extra">
-         var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"ajaxurl":"https:\/\/absherbusiness.com\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+         var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"ajaxurl":"admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
       </script>
       <script src="/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=8.6.1" id="wc-order-attribution-js"></script>
       <script src="/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-contact-form-7-tracker.js?ver=1.20" id="gtm4wp-contact-form-7-tracker-js"></script>
@@ -2229,7 +2214,7 @@
       <script src="/wp-content/themes/bizex/assets/js/jquery.marquee.min.js?ver=1.0" id="marquee-js"></script>
       <script src="/wp-content/themes/bizex/assets/js/script.js?ver=1.0" id="script-js"></script>
       <script id="eael-general-js-extra">
-         var localize = {"ajaxurl":"https:\/\/absherbusiness.com\/wp-admin\/admin-ajax.php","nonce":"c17dc69cb5","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"\/en\/","cart_redirectition":"no","cart_page_url":"\/en\/cart\/","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+         var localize = {"ajaxurl":"admin-ajax.php","nonce":"c17dc69cb5","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"\/en\/","cart_redirectition":"no","cart_page_url":"\/en\/cart\/","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
       </script>
       <script src="/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.9.11" id="eael-general-js"></script>
       <script src="/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
@@ -2242,7 +2227,7 @@
          wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
       </script>
       <script id="elementor-pro-frontend-js-before">
-         var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/absherbusiness.com\/wp-admin\/admin-ajax.php","nonce":"7e4528760a","urls":{"assets":"\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/absherbusiness.com\/en\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"woocommerce":{"menu_cart":{"cart_page_url":"\/en\/cart\/","checkout_page_url":"\/en\/checkout\/","fragments_nonce":"12221a55bc"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/absherbusiness.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+         var ElementorProFrontendConfig = {"ajaxurl":"admin-ajax.php","nonce":"7e4528760a","urls":{"assets":"\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/absherbusiness.com\/en\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"woocommerce":{"menu_cart":{"cart_page_url":"\/en\/cart\/","checkout_page_url":"\/en\/checkout\/","fragments_nonce":"12221a55bc"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/absherbusiness.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
       </script>
       <script src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.22.1" id="elementor-pro-frontend-js"></script>
       <script src="/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
